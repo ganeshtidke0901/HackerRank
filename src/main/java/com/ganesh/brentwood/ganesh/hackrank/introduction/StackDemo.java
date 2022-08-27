@@ -1,9 +1,7 @@
 package com.ganesh.brentwood.ganesh.hackrank.introduction;
 
 
-import java.util.Deque;
-import java.util.Optional;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.ConcurrentLinkedDeque;
 
 public class StackDemo {
