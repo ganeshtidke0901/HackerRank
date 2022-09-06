@@ -1,8 +1,5 @@
 package com.ganesh.brentwood.ganesh.hackrank.introduction;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 import java.util.*;
 
 /*
@@ -11,6 +8,7 @@ import java.util.*;
 class Priorities {
 
     public List<Student1> getStudents(List<String> events) {
+
 
         PriorityQueue<Student1> priorityQueue = new PriorityQueue<>(events.size(),Comparator.comparing(Student1::getCGPA).reversed().thenComparing(Student1::getName).thenComparing(Student1::getID));
         for (String event : events) {

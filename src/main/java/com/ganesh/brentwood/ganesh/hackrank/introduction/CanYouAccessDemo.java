@@ -22,6 +22,7 @@ public class CanYouAccessDemo {
                 Class class1 = CanYouAccessDemo.Inner.Private.class;
 ////              Class<Inner.Private> class1= (Class<Inner.Private>) new Inner().new Private().getClass();
 ////                    ;
+//           Object o= class1.newInstance();
             Method[] methods = class1.getDeclaredMethods();
             methods[0].setAccessible(true);
             System.out.println(methods[0].invoke(o, num));
